@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../imagenes/favicon3/favicon.ico" type="image/x-icon">
     <title>Noticias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,600;0,900;1,200;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/57729d5abd.js" crossorigin="anonymous"></script>
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
     <link rel="apple-touch-icon" sizes="57x57" href="../imagenes/favicon3/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../imagenes/favicon3/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../imagenes/favicon3/apple-icon-72x72.png">
@@ -35,7 +36,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-image: url(../imagenes/tomorrowland.jpg);">
+<body>
     <header class="df-header">
         <div class="logo">
             <img src="../imagenes/logosoulmin.jpeg" alt="logo" class="logomin">
@@ -55,9 +56,10 @@
         <h3 class="titulomain">NOTICIAS</h3>
         <h4 class="titulomain">LES ESTAMOS PREPARANDO TODAS LAS NOVEDADES</h4>
         <div>
-            <p class="noticias-texto">.COMO PRIMERA INSTANCIA TENDREMOS ESTE JUEVES 29-09 <br> LA PRIMERA ETAPA DEL PROYECTO FINAL DE
+            <p class="noticias-texto">.ESTA SEMANA SEGUNDA PRE-ENTREGA <br> LA SEGUNDA ETAPA DEL
+                PROYECTO FINAL DE
                 PROGRAMACION CON HTML Y CSS</p>
-            <p class="noticias-texto">.LA SEMANA ENTRANTE RECIBIREMOS AL PRODCUTOR Y DJ JUAN PABLO NARCISO</p>    
+            <p class="noticias-texto">.LA SEMANA ENTRANTE RECIBIREMOS AL PRODCUTOR Y DJ JUAN PABLO NARCISO</p>
         </div>
         <div class="noticias">
             <img class="noticias-1" src="../imagenes/vinilo.jpg" alt="">
@@ -67,6 +69,39 @@
             <img class="noticias-1" src="../imagenes/logosoul.jpeg" alt="">
             <img class="noticias-1" src="../imagenes/consola.jpg" alt="">
         </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/auriculares.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/consola.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/vinilo.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <div class="titulomain">
             <p>
                 <STRONG>INFORMACION Y CONTACTO</STRONG> <br>
@@ -91,7 +126,7 @@
             </a>
         </div>
     </footer>
-
+    <script src="https://kit.fontawesome.com/57729d5abd.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
