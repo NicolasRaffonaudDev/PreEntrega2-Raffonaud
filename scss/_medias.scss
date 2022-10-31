@@ -1,7 +1,104 @@
+@media (max-width: 1300px) {
+    .bienvenido {
+        display: none;
+    }
+
+    body {
+        background-size: 100%;
+    }
+
+    .iframe {
+        margin-top: 0%;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+
+        p {
+            margin: 30px;
+            font-size: large;
+            
+        }
+
+        img {
+            width: 30%;
+            height: 100vh;
+        }
+    }
+    
+}
+
+@media (max-width: 1110px) {
+    h1 {
+        display: none;
+    }
+
+    .df-header {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bienvenido {
+        display: none;
+    }
+
+    .iframe {
+        margin-top: 0%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 155vh;
+        width: 100%;
+    }
+
+    iframe {
+        width: 80%;
+        height: 300px;
+        border: solid black 2px;
+        margin: 10px;
+    }
+
+    .iframesc {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        height: 40vh;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+    }
+
+    .presentacion-img {
+        height: auto;
+        width: auto;
+    }
+
+    .presentacion-p {
+        font-size: medium !important;
+        margin: 30px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            display: none;
+        }
+    }
+
+    .presentacion-p {
+        font-size: x-large !important;
+    }
+}
 
 @media (max-width: 576px) {
     body {
-        background-size: 100vh;
+        background-size: 100%;
     }
 
     h1 {
@@ -62,6 +159,16 @@
         padding: 10px;
         font-size: small;
     }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 500px) {
@@ -96,7 +203,17 @@
     .titulomain {
         margin: 15px;
         padding: 10px;
-        font-size: xx-small;
+        font-size: large;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            display: none;
+        }
     }
 }
 
@@ -110,7 +227,7 @@
     .titulomain {
         margin: 15px;
         padding: 10px;
-        font-size: xx-small;
+        font-size: medium !important;
     }
 
     .iframesc {
@@ -130,4 +247,20 @@
         height: 130vh;
         margin: 5px;
     }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            display: none;
+        }
+    }
+
+    .presentacion-p {
+        font-size: x-small;
+        margin: 10px;
+    }
+
 }

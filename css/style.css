@@ -6,7 +6,7 @@
 
 body {
   background-image: url(../imagenes/tomorrowland.jpg);
-  background-size: auto; }
+  background-size: 100%; }
 
 .min-height {
   min-height: 82vh; }
@@ -107,8 +107,8 @@ h1 {
   margin: 50px; }
 
 .noticias-1 {
-  width: 500px;
-  height: 400px; }
+  width: 30%;
+  height: 900px; }
 
 .noticias-texto {
   color: rgba(221, 221, 221, 0.76);
@@ -121,6 +121,9 @@ h1 {
   font-size: xx-large;
   background-color: rgba(0, 0, 0, 0.623); }
 
+.carousel {
+  height: 80vh; }
+
 .presentacion {
   display: flex;
   flex-direction: row;
@@ -131,18 +134,18 @@ h1 {
 
 .presentacion-p {
   flex-direction: column;
-  font-size: xx-large;
+  font-size: x-large;
   justify-content: space-around;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.61);
-  margin: 50px;
+  margin: 30px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.452); }
 
 .presentacion-img {
-  width: 500px;
-  height: 700px; }
+  width: 30%;
+  height: 100vh; }
 
 .iframe {
   display: grid;
@@ -152,8 +155,8 @@ h1 {
   justify-items: center;
   align-items: center;
   width: 100%;
-  height: 70vh;
-  margin-top: -150px; }
+  height: 100vh;
+  margin-top: -15px; }
 
 iframe {
   width: 92%;
@@ -180,9 +183,69 @@ iframe {
   align-items: center;
   padding: 100px; }
 
+@media (max-width: 1300px) {
+  .bienvenido {
+    display: none; }
+  body {
+    background-size: 100%; }
+  .iframe {
+    margin-top: 0%; }
+  .presentacion {
+    width: auto;
+    height: auto; }
+    .presentacion p {
+      margin: 30px;
+      font-size: large; }
+    .presentacion img {
+      width: 30%;
+      height: 100vh; } }
+
+@media (max-width: 1110px) {
+  h1 {
+    display: none; }
+  .df-header {
+    justify-content: space-around;
+    align-items: center; }
+  .bienvenido {
+    display: none; }
+  .iframe {
+    margin-top: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 155vh;
+    width: 100%; }
+  iframe {
+    width: 80%;
+    height: 300px;
+    border: solid black 2px;
+    margin: 10px; }
+  .iframesc {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 40vh; }
+  .presentacion {
+    width: auto;
+    height: auto; }
+  .presentacion-img {
+    height: auto;
+    width: auto; }
+  .presentacion-p {
+    font-size: medium !important;
+    margin: 30px !important; } }
+
+@media (max-width: 800px) {
+  .presentacion {
+    width: auto;
+    height: auto;
+    margin: 0px; }
+    .presentacion img {
+      display: none; }
+  .presentacion-p {
+    font-size: x-large !important; } }
+
 @media (max-width: 576px) {
   body {
-    background-size: 100vh; }
+    background-size: 100%; }
   h1 {
     display: none; }
   .df-ul {
@@ -219,7 +282,13 @@ iframe {
   .titulomain {
     margin: 15px;
     padding: 10px;
-    font-size: small; } }
+    font-size: small; }
+  .presentacion {
+    width: auto;
+    height: auto;
+    margin: 0px; }
+    .presentacion img {
+      display: none; } }
 
 @media (max-width: 500px) {
   .logomin {
@@ -245,7 +314,13 @@ iframe {
   .titulomain {
     margin: 15px;
     padding: 10px;
-    font-size: xx-small; } }
+    font-size: large; }
+  .presentacion {
+    width: auto;
+    height: auto;
+    margin: 0px; }
+    .presentacion img {
+      display: none; } }
 
 @media (max-width: 428px) {
   .df-ul {
@@ -255,7 +330,7 @@ iframe {
   .titulomain {
     margin: 15px;
     padding: 10px;
-    font-size: xx-small; }
+    font-size: medium !important; }
   .iframesc {
     display: flex;
     justify-content: center;
@@ -269,4 +344,13 @@ iframe {
     align-items: center;
     width: 100%;
     height: 130vh;
-    margin: 5px; } }
+    margin: 5px; }
+  .presentacion {
+    width: auto;
+    height: auto;
+    margin: 0px; }
+    .presentacion img {
+      display: none; }
+  .presentacion-p {
+    font-size: x-small;
+    margin: 10px; } }
