@@ -28,10 +28,9 @@ body {
   font-size: 40px;
   text-align: center;
   padding: 5px 10px; }
-
-.redes a i:hover {
-  transform: scale(1.5);
-  transition: all 1s ease; }
+  .redes a i:hover {
+    transform: scale(1.5);
+    transition: all 1s ease; }
 
 .bacteria:hover {
   color: green;
@@ -49,10 +48,9 @@ body {
   display: flex;
   justify-content: left;
   align-items: center; }
-
-.logo h1 {
-  color: white;
-  font-family: 'Raleway', sans-serif; }
+  .logo h1 {
+    color: white;
+    font-family: 'Raleway', sans-serif; }
 
 .logomin {
   width: 125px;
@@ -77,14 +75,12 @@ a:active {
   list-style: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 200; }
-
-.df-ul li {
-  margin: 10px; }
-
-.df-ul li:hover {
-  transform: scale(1.25);
-  transition: all 0.6s ease;
-  font-weight: 600; }
+  .df-ul li {
+    margin: 10px; }
+    .df-ul li:hover {
+      transform: scale(1.25);
+      transition: all 0.6s ease;
+      font-weight: 600; }
 
 h1 {
   margin-left: 70px; }
@@ -130,7 +126,7 @@ h1 {
   flex-wrap: nowrap;
   justify-content: space-around;
   margin: 30px;
-  padding: 0px; }
+  padding: 25px; }
 
 .presentacion-p {
   flex-direction: column;
@@ -140,7 +136,7 @@ h1 {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.61);
   margin: 30px;
-  padding: 10px;
+  padding: 30px;
   background-color: rgba(0, 0, 0, 0.452); }
 
 .presentacion-img {
@@ -156,7 +152,7 @@ h1 {
   align-items: center;
   width: 100%;
   height: 100vh;
-  margin-top: -15px; }
+  margin-top: -50px; }
 
 iframe {
   width: 92%;
@@ -189,7 +185,7 @@ iframe {
   body {
     background-size: 100%; }
   .iframe {
-    margin-top: 0%; }
+    margin-top: -5%; }
   .presentacion {
     width: auto;
     height: auto; }
@@ -198,7 +194,18 @@ iframe {
       font-size: large; }
     .presentacion img {
       width: 30%;
-      height: 100vh; } }
+      height: 100vh; }
+  .noticias {
+    margin: 30px; }
+  .noticias-1 {
+    width: 45%;
+    height: 500px; }
+  .noticias-texto {
+    padding: 20px;
+    margin: 40px;
+    font-size: xx-large; }
+  .carousel {
+    height: 80vh; } }
 
 @media (max-width: 1110px) {
   h1 {
@@ -231,7 +238,18 @@ iframe {
     width: auto; }
   .presentacion-p {
     font-size: medium !important;
-    margin: 30px !important; } }
+    margin: 30px !important; }
+  .noticias {
+    margin: 30px; }
+  .noticias-1 {
+    width: 45%;
+    height: 500px; }
+  .noticias-texto {
+    padding: 20px;
+    margin: 40px;
+    font-size: x-large; }
+  .carousel {
+    height: 80vh; } }
 
 @media (max-width: 800px) {
   .presentacion {
@@ -241,7 +259,18 @@ iframe {
     .presentacion img {
       display: none; }
   .presentacion-p {
-    font-size: x-large !important; } }
+    font-size: x-large !important; }
+  .noticias {
+    margin: 30px; }
+  .noticias-1 {
+    width: 30%;
+    height: 300px; }
+  .noticias-texto {
+    padding: 20px;
+    margin: 40px;
+    font-size: large; }
+  .carousel {
+    height: 80vh; } }
 
 @media (max-width: 576px) {
   body {
@@ -288,7 +317,11 @@ iframe {
     height: auto;
     margin: 0px; }
     .presentacion img {
-      display: none; } }
+      display: none; }
+  .noticias {
+    margin: 20px; }
+  .noticias-1 {
+    display: none; } }
 
 @media (max-width: 500px) {
   .logomin {
@@ -320,11 +353,15 @@ iframe {
     height: auto;
     margin: 0px; }
     .presentacion img {
-      display: none; } }
+      display: none; }
+  .noticias {
+    margin: 20px; }
+  .noticias-1 {
+    display: none; } }
 
 @media (max-width: 428px) {
   .df-ul {
-    font-size: 55%;
+    font-size: 65%;
     margin-top: 20px;
     margin-bottom: 20px; }
   .titulomain {
@@ -353,4 +390,14 @@ iframe {
       display: none; }
   .presentacion-p {
     font-size: x-small;
-    margin: 10px; } }
+    margin: 10px; }
+  .noticias {
+    margin: 20px; }
+  .noticias-1 {
+    display: none; }
+  .noticias-texto {
+    padding: 20px;
+    margin: 10px;
+    font-size: large; }
+  .carousel {
+    height: 90vh; } }

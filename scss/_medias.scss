@@ -8,7 +8,7 @@
     }
 
     .iframe {
-        margin-top: 0%;
+        margin-top: -5%;
     }
 
     .presentacion {
@@ -26,7 +26,24 @@
             height: 100vh;
         }
     }
+
+    .noticias {
+        margin: 30px;
+    }
+    .noticias-1 {
+        width: 45%;
+        height: 500px;
+    }
     
+    .noticias-texto {
+        padding: 20px;
+        margin: 40px;
+        font-size: xx-large;
+    }
+    
+    .carousel {
+        height: 80vh;
+    }   
 }
 
 @media (max-width: 1110px) {
@@ -54,7 +71,7 @@
     iframe {
         width: 80%;
         height: 300px;
-        border: solid black 2px;
+        border: solid $colornegro 2px;
         margin: 10px;
     }
 
@@ -78,6 +95,24 @@
         font-size: medium !important;
         margin: 30px !important;
     }
+
+    .noticias {
+        margin: 30px;
+    }
+    .noticias-1 {
+        width: 45%;
+        height: 500px;
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 40px;
+        font-size: x-large;
+    }
+    
+    .carousel {
+        height: 80vh;
+    }
 }
 
 @media (max-width: 800px) {
@@ -93,6 +128,24 @@
 
     .presentacion-p {
         font-size: x-large !important;
+    }
+
+    .noticias {
+        margin: 30px;
+    }
+    .noticias-1 {
+        width: 30%;
+        height: 300px;
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 40px;
+        font-size: large;
+    }
+    
+    .carousel {
+        height: 80vh;
     }
 }
 
@@ -133,7 +186,7 @@
     iframe {
         width: 80%;
         height: 200px;
-        border: solid black 2px;
+        border: solid $colornegro 2px;
     }
 
     .iframesc {
@@ -146,7 +199,7 @@
     }
 
     .bg-footer {
-        background-color: rgb(0, 0, 0);
+        background-color: $colornegro;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -168,6 +221,14 @@
         img {
             display: none;
         }
+    }
+
+    .noticias {
+        margin: 20px;
+    }
+
+    .noticias-1 {
+        display: none;
     }
 }
 
@@ -215,11 +276,19 @@
             display: none;
         }
     }
+
+    .noticias {
+        margin: 20px;
+    }
+
+    .noticias-1 {
+        display: none;
+    }
 }
 
 @media (max-width: 428px) {
     .df-ul {
-        font-size: 55%;
+        font-size: 65%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -263,4 +332,21 @@
         margin: 10px;
     }
 
+    .noticias {
+        margin: 20px;
+    }
+
+    .noticias-1 {
+        display: none;
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 10px;
+        font-size: large;
+    }
+    
+    .carousel {
+        height: 90vh;
+    }
 }
