@@ -1,0 +1,15 @@
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    h1 {
+        color: $colorblanco;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.logomin {
+    width: 125px;
+    height: 125px;
+}

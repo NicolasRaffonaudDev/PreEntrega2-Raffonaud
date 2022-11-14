@@ -1,0 +1,365 @@
+/*aca implementamos el uso de mixin*/
+@mixin displaynone {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .bienvenido {
+        @include displaynone();
+    }
+
+    body {
+        background-size: 100%;
+    }
+
+    .iframe {
+        margin-top: -5%;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+
+        p {
+            margin: 30px;
+            font-size: large;
+            
+        }
+
+        img {
+            width: 30%;
+            height: 100vh;
+        }
+    }
+
+    .noticias {
+        margin: 30px;
+    }
+    .noticias-1 {
+        width: 45%;
+        height: 500px;
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 40px;
+        font-size: xx-large;
+    }
+    
+    .carousel {
+        height: 100%;
+    }   
+}
+
+@media (max-width: 1110px) {
+    h1 {
+        @include displaynone();
+    }
+
+    .df-header {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bienvenido {
+        @include displaynone();
+    }
+
+    .iframe {
+        margin-top: 0%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 155vh;
+        width: 100%;
+    }
+
+    iframe {
+        width: 80%;
+        height: 300px;
+        border: solid $colornegro 2px;
+        margin: 10px;
+    }
+
+    .iframesc {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        height: 40vh;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+    }
+
+    .presentacion-img {
+        height: auto;
+        width: auto;
+    }
+
+    .presentacion-p {
+        font-size: medium !important;
+        margin: 30px !important;
+    }
+
+    .noticias {
+        margin: 30px;
+    }
+    .noticias-1 {
+        width: 50%;
+        height: 370px;
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 40px;
+        font-size: x-large;
+    }
+    
+    .carousel {
+        height: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            @include displaynone();
+        }
+    }
+
+    .presentacion-p {
+        font-size: x-large !important;
+    }
+
+    .noticias {
+        margin: 30px;
+    }
+    .noticias-1 {
+        width: 50%;
+        height: 300px;
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 40px;
+        font-size: large;
+    }
+    
+    .carousel {
+        height: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-size: 100%;
+    }
+
+    h1 {
+        @include displaynone();
+    }
+
+    .df-ul {
+        font-size: 75%;
+    }
+    .bienvenido {
+        @include displaynone();
+    
+    }
+
+    .df-header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logomin {
+        width: 100px;
+        height: 100px;
+    }
+
+    .iframe {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 140vh;
+        margin-top: 10px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 200px;
+        border: solid $colornegro 2px;
+    }
+
+    .iframesc {
+        margin-bottom: 30px;
+        height: 40vh;
+    }
+
+    .type-weight {
+        @include displaynone();
+    }
+
+    .bg-footer {
+        background-color: $colornegro;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .titulomain {
+        margin: 15px;
+        padding: 10px;
+        font-size: small;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            @include displaynone();
+        }
+    }
+
+    .noticias {
+        margin: 20px;
+    }
+
+    .noticias-1 {
+        @include displaynone();
+    }
+
+    .carousel {
+        height: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .logomin {
+        @include displaynone();
+    }
+
+    .df-ul {
+        font-size: 65%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .iframe {
+        grid-column-gap: 3%;
+        grid-row-gap: 5px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 150vh;
+        margin: 5px;
+    }
+
+    .iframesc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        height: 35vh;
+    }
+
+    .titulomain {
+        margin: 15px;
+        padding: 10px;
+        font-size: large;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            @include displaynone();
+        }
+    }
+
+    .noticias {
+        margin: 20px;
+    }
+
+    .noticias-1 {
+        @include displaynone();
+    }
+
+    .carousel {
+        height: 70%;
+    }
+}
+
+@media (max-width: 428px) {
+    .df-ul {
+        font-size: 65%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .titulomain {
+        margin: 15px;
+        padding: 10px;
+        font-size: medium !important;
+    }
+
+    .iframesc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        height: 30vh;
+    }
+
+    .iframe {
+        grid-column-gap: 3%;
+        grid-row-gap: 5px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 130vh;
+        margin: 5px;
+    }
+
+    .presentacion {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        
+        img {
+            @include displaynone();
+        }
+    }
+
+    .presentacion-p {
+        font-size: x-small;
+        margin: 10px;
+    }
+
+    .noticias {
+        margin: 20px;
+    }
+
+    .noticias-1 {
+        @include displaynone();
+    }
+    
+    .noticias-texto {
+        padding: 20px;
+        margin: 10px;
+        font-size: large;
+    }
+    
+    .carousel {
+        height: 70%;
+    }
+}

@@ -1,0 +1,25 @@
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 25px;
+}
+
+.presentacion-p {
+    flex-direction: column;
+    font-size: x-large;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.61);
+    margin: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.presentacion-img {
+    width: 30%;
+    height: 100vh;
+}
