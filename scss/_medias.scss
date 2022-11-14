@@ -1,6 +1,11 @@
+/*aca implementamos el uso de mixin*/
+@mixin displaynone {
+    display: none;
+}
+
 @media (max-width: 1300px) {
     .bienvenido {
-        display: none;
+        @include displaynone();
     }
 
     body {
@@ -48,7 +53,7 @@
 
 @media (max-width: 1110px) {
     h1 {
-        display: none;
+        @include displaynone();
     }
 
     .df-header {
@@ -57,7 +62,7 @@
     }
 
     .bienvenido {
-        display: none;
+        @include displaynone();
     }
 
     .iframe {
@@ -100,8 +105,8 @@
         margin: 30px;
     }
     .noticias-1 {
-        width: 45%;
-        height: 500px;
+        width: 50%;
+        height: 370px;
     }
     
     .noticias-texto {
@@ -122,7 +127,7 @@
         margin: 0px;
         
         img {
-            display: none;
+            @include displaynone();
         }
     }
 
@@ -134,7 +139,7 @@
         margin: 30px;
     }
     .noticias-1 {
-        width: 30%;
+        width: 50%;
         height: 300px;
     }
     
@@ -155,14 +160,14 @@
     }
 
     h1 {
-        display: none;
+        @include displaynone();
     }
 
     .df-ul {
         font-size: 75%;
     }
     .bienvenido {
-        display: none;
+        @include displaynone();
     
     }
 
@@ -195,7 +200,7 @@
     }
 
     .type-weight {
-        display: none;
+        @include displaynone();
     }
 
     .bg-footer {
@@ -219,7 +224,7 @@
         margin: 0px;
         
         img {
-            display: none;
+            @include displaynone();
         }
     }
 
@@ -228,7 +233,7 @@
     }
 
     .noticias-1 {
-        display: none;
+        @include displaynone();
     }
 
     .carousel {
@@ -238,7 +243,7 @@
 
 @media (max-width: 500px) {
     .logomin {
-        display: none;
+        @include displaynone();
     }
 
     .df-ul {
@@ -277,7 +282,7 @@
         margin: 0px;
         
         img {
-            display: none;
+            @include displaynone();
         }
     }
 
@@ -286,7 +291,7 @@
     }
 
     .noticias-1 {
-        display: none;
+        @include displaynone();
     }
 
     .carousel {
@@ -331,7 +336,7 @@
         margin: 0px;
         
         img {
-            display: none;
+            @include displaynone();
         }
     }
 
@@ -345,7 +350,7 @@
     }
 
     .noticias-1 {
-        display: none;
+        @include displaynone();
     }
     
     .noticias-texto {

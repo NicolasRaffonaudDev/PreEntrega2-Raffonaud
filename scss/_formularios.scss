@@ -1,6 +1,30 @@
-.formulario-contacto {
+.container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 100px;
+    justify-content: center;
+    justify-items: center;
 }
+/*aca implementamos el uso de un extend*/
+
+.formulario-contacto {
+    @extend .container;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    margin: 30px;
+    background-color: gray;
+    width: 70vw;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.label {
+    font-size: 30px;
+    color: black;
+}
+
+.input {
+    width: 60vw;
+}
+

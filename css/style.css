@@ -103,8 +103,8 @@ h1 {
   margin: 50px; }
 
 .noticias-1 {
-  width: 30%;
-  height: 900px; }
+  width: 50%;
+  height: 530px; }
 
 .noticias-texto {
   color: rgba(221, 221, 221, 0.76);
@@ -144,6 +144,7 @@ h1 {
   width: 30%;
   height: 100vh; }
 
+/*aca implementamos el uso de mixin*/
 .iframe {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -174,12 +175,32 @@ iframe {
   margin: 10px;
   padding: 30px; }
 
-.formulario-contacto {
+.container, .formulario-contacto {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 100px; }
+  justify-content: center;
+  justify-items: center; }
 
+/*aca implementamos el uso de un extend*/
+.formulario-contacto {
+  flex-direction: column;
+  padding: 20px;
+  font-size: 20px;
+  margin: 30px;
+  background-color: gray;
+  width: 70vw;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black; }
+
+.label {
+  font-size: 30px;
+  color: black; }
+
+.input {
+  width: 60vw; }
+
+/*aca implementamos el uso de mixin*/
 @media (max-width: 1300px) {
   .bienvenido {
     display: none; }
@@ -243,8 +264,8 @@ iframe {
   .noticias {
     margin: 30px; }
   .noticias-1 {
-    width: 45%;
-    height: 500px; }
+    width: 50%;
+    height: 370px; }
   .noticias-texto {
     padding: 20px;
     margin: 40px;
@@ -264,7 +285,7 @@ iframe {
   .noticias {
     margin: 30px; }
   .noticias-1 {
-    width: 30%;
+    width: 50%;
     height: 300px; }
   .noticias-texto {
     padding: 20px;
