@@ -426,4 +426,6 @@ iframe {
     margin: 10px;
     font-size: large; }
   .carousel {
-    height: 70%; } }
+    height: 70%; }
+  .titulomain {
+    font-size: small !important; } }
